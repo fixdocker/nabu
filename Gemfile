@@ -4,6 +4,7 @@ gem 'rails', '~> 3.2.22.2'
 
 # Databases
 # gem 'mysql2', '~> 0.5.2'
+gem 'sqlite3'
 gem 'graphql'
 gem "graphiql-rails"
 

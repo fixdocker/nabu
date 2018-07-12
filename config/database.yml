@@ -17,9 +17,11 @@ uat:
 
 development:
   <<: *COMMON
-  database: nabu_devel
+  adapter: sqlite3
+  database: db/development.sqlite3
 
 test:
   <<: *COMMON
-  database: nabu_test
+  adapter: sqlite3
+  database: db/test.sqlite3
   verbosity: quiet
