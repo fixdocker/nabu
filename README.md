@@ -9,6 +9,16 @@ This application has been configured with *guard*, it will ensure
 * Development web server is started
 * All of the above is restarted when you edit files
 
+### OSX dependencies
+
+For rmagick:
+brew install imagemagick@6
+brew unlink imagemagick
+brew link imagemagick@6 --force
+
+For ruby-filemagic:
+brew install libmagic
+
 ``` bash
 bundle install
 bundle exec spring rake db:create
