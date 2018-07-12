@@ -87,8 +87,8 @@ group :development, :test do
   gem 'sextant'
   gem 'thin'
 
-  gem 'spring'
-  gem 'spring-commands-rspec'
+  # gem 'spring'
+  # gem 'spring-commands-rspec'
 
   gem 'pry'
   gem 'pry-byebug'

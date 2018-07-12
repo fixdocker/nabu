@@ -363,9 +363,6 @@ GEM
     slop (3.4.7)
     spreadsheet (1.0.8)
       ruby-ole (>= 1.0)
-    spring (1.0.0)
-    spring-commands-rspec (1.0.1)
-      spring (>= 0.9.1)
     sprockets (2.2.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -484,8 +481,6 @@ DEPENDENCIES
   ruby-filemagic
   sass-rails (~> 3.2.3)
   sextant
-  spring
-  spring-commands-rspec
   squeel
   streamio-ffmpeg
   sunspot_rails
