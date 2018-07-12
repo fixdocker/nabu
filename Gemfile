@@ -49,7 +49,7 @@ gem 'sunspot_solr'
 gem 'unicorn'
 
 # Media Detection
-gem 'ruby-filemagic'
+# gem 'ruby-filemagic'
 
 # Deployment
 gem 'capistrano'
@@ -72,7 +72,7 @@ gem 'rake', '< 11.0'
 gem 'timeliness'
 
 # Image processing
-gem 'rmagick'
+# gem 'rmagick'
 
 # Scheduling
 gem 'whenever', :require => false
