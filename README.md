@@ -19,6 +19,12 @@ brew link imagemagick@6 --force
 For ruby-filemagic:
 brew install libmagic
 
+For running md5sum:
+brew install md5sha1sum
+
+For sunspot:
+brew cask install java
+
 ``` bash
 bundle install
 bundle exec spring rake db:create
