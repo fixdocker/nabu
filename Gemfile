@@ -107,6 +107,7 @@ group :development, :test do
 
   # Tool for writing clean and consistent HAML
   gem 'haml_lint', '>= 0.18.0', require: false
+  gem 'test-unit', '~> 3.0'
 end
 
 group :development do
