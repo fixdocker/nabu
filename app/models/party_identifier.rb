@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: party_identifiers
+#
+#  id         :integer          not null, primary key
+#  user_id    :integer          not null
+#  party_type :integer          not null
+#  identifier :string(255)      not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class PartyIdentifier < ActiveRecord::Base
   TYPES = [:NLA, :ORCID]
 

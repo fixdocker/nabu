@@ -39,7 +39,9 @@
 #  west_limit              :float
 #  east_limit              :float
 #  doi                     :string(255)
+#  essences_count          :integer
 #
+
 class Item < ActiveRecord::Base
   include IdentifiableByDoi
   include HasBoundaries

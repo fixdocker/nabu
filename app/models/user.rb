@@ -34,6 +34,7 @@
 #  rights_transferred_to_id :integer
 #  rights_transfer_reason   :string(255)
 #  party_identifier         :string(255)
+#  collector                :boolean          default(FALSE), not null
 #
 
 class User < ActiveRecord::Base

@@ -39,6 +39,7 @@
 #  west_limit              :float
 #  east_limit              :float
 #  doi                     :string(255)
+#  essences_count          :integer
 #
 
 require 'spec_helper'

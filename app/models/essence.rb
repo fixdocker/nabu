@@ -15,7 +15,7 @@
 #  created_at              :datetime
 #  updated_at              :datetime
 #  doi                     :string(255)
-#  derived_files_generated :boolean
+#  derived_files_generated :boolean          default(FALSE)
 #
 
 class Essence < ActiveRecord::Base
