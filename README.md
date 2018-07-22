@@ -41,6 +41,12 @@ Run the below from the home directory on the server.
 ./scripts/fix_solr.sh
 ```
 
+### Restart delayed_job
+
+``` bash
+RAILS_ENV=production bundle exec rake jobs:work &
+```
+
 ## Importing a production database into your development environment
 
 ``` bash
