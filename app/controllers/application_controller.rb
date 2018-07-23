@@ -19,6 +19,15 @@ class ApplicationController < ActionController::Base
       render nothing: true, :status => 403
     when request.format.symbol == :json
       render nothing: true, :status => 401
+    # A user is trying to view an item, lacks authorization, but is able to view the collection
+    when exception.message == "Not authorized to show item." && params[:controller] == "items" && params[:action] == "show"
+      redirect_to collection_path(params[:collection_id]), :alert => exception.message
+    # A user is trying to view an essence, lacks authorization, but is able to view the item
+    when exception.message == "Not authorized to show essence." && params[:controller] == "essences" && params[:action] == "show"
+      redirect_to collection_item_path(params[:collection_id], params[:item_id]), :alert => exception.message
+    # A user is trying to view an essence, lacks authorization, but is able to view the collection
+    when exception.message == "Not authorized to show item." && params[:controller] == "essences" && params[:action] == "show"
+      redirect_to collection_path(params[:collection_id]), :alert => exception.message
     when current_user
       redirect_to root_url, :alert => exception.message
     else
