@@ -56,11 +56,8 @@ gem 'capistrano'
 gem 'capistrano-unicorn'
 gem 'capistrano-rbenv'
 
-group :errors do
-# Logging
-  gem 'rollbar'
-  gem 'newrelic_rpm'
-end
+gem 'rollbar'
+gem 'newrelic_rpm'
 
 # Misc
 gem 'progress_bar'
