@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/distributedlife/traceroute.git
+  remote: git@github.com:distributedlife/traceroute
   revision: 94eb4e66e13c590e07d3b76cc154d2e32d5c5c21
   ref: 94eb4e66e13c590e07d3b76cc154d2e32d5c5c21
   specs:
@@ -7,7 +7,7 @@ GIT
       rails (>= 3.0.0)
 
 GIT
-  remote: git://github.com/roo-rb/roo-xls.git
+  remote: git@github.com:roo-rb/roo-xls
   revision: 0a5ef88c8312c48b1a97cefa9e5f21e9a7f64209
   ref: 0a5ef88
   specs:
@@ -349,7 +349,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-filemagic (0.4.2)
-    ruby-ole (1.2.11.8)
+    ruby-ole (1.2.12.2)
     ruby-progressbar (1.8.1)
     rubyzip (1.2.0)
     sass (3.2.14)
@@ -361,7 +361,7 @@ GEM
       activesupport (>= 3.2)
       rails (>= 3.2)
     slop (3.4.7)
-    spreadsheet (1.0.8)
+    spreadsheet (1.2.3)
       ruby-ole (>= 1.0)
     spring (1.0.0)
     spring-commands-rspec (1.0.1)
