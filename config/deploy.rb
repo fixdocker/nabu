@@ -74,8 +74,8 @@ namespace :monit do
   task :monitor do
     run "sudo /usr/bin/monit monitor all"
   end
-  after 'deploy:restart', 'monit:monitor'
-  before 'deploy:restart', 'monit:unmonitor'
+  #after 'deploy:restart', 'monit:monitor'
+  #before 'deploy:restart', 'monit:unmonitor'
 end
 
 task :notify_rollbar, :roles => :app do
@@ -85,7 +85,7 @@ task :notify_rollbar, :roles => :app do
   rails_env = fetch(:rails_env, 'production')
   run "curl https://api.rollbar.com/api/1/deploy/ -F access_token=#{rollbar_token} -F environment=#{rails_env} -F revision=#{revision} -F local_username=#{local_user} >/dev/null 2>&1", :once => true
 end
-after :deploy, 'notify_rollbar'
+#after :deploy, 'notify_rollbar'
 
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
