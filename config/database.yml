@@ -5,7 +5,7 @@ common: &COMMON
   timeout: 5000
   adapter: mysql2
   host: localhost
-  user: root
+  username: root
 
 production:
   <<: *COMMON
@@ -14,7 +14,7 @@ production:
 staging:
   <<: *COMMON
   database: nabu_staging
-  user: nabu
+  username: nabu
 
 development:
   <<: *COMMON
