@@ -11,9 +11,10 @@ production:
   <<: *COMMON
   database: nabu
 
-uat:
+staging:
   <<: *COMMON
-  database: nabu
+  database: nabu_staging
+  user: nabu
 
 development:
   <<: *COMMON
